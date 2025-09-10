@@ -1,0 +1,122 @@
+/* extra glowing effect */
+.glow-text {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 105, 180, 0.7),
+    0 0 30px rgba(138, 43, 226, 0.6);
+}
+
+.floating-text {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+body {
+  margin: 0;
+  background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff0080);
+  background-size: 600% 600%;
+  animation: rainbow 20s ease infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glow-text {
+  color: white;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ba55d3,
+    0 0 80px #9400d3;
+}
+
+.floating-text {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+/* Rainbow gradient background */
+body {
+  margin: 0;
+  background: linear-gradient(270deg, #ff0080, #7928ca, #2afadf, #ff0080);
+  background-size: 600% 600%;
+  animation: rainbow 20s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FlipBook container */
+.book-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page style */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Text glow */
+.glow-text {
+  color: white;
+  text-shadow: 
+    0 0 5px #fff,
+    0 0 10px #ff69b4,
+    0 0 20px #ff69b4,
+    0 0 40px #ba55d3,
+    0 0 80px #9400d3;
+}
+
+/* Floating animation */
+.floating-text {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Default text styling */
+.page-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
